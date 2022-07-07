@@ -5,11 +5,9 @@ FLASH = [
   Image('77777:77777:77777:77777:77777'),
   Image('55555:55555:55555:55555:55555'),
   Image('33333:33333:33333:33333:33333'),
-  Image('11111:11111:11111:11111:11111'),
-  Image()
+  Image('11111:11111:11111:11111:11111')
 ]
-a = 0
-
 while True:
   if button_a.was_pressed():
     display.show(FLASH, delay=100)
+    display.show(Image())

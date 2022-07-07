@@ -12,19 +12,17 @@ HANGMAN = [
   Image('99990:90090:90999:90090:90000'),
   Image('99990:90090:90999:90090:90900'),
   Image('99990:90090:90999:90090:90909')
-]
-# print(len(HANGMAN))
-a = 0
+  ]
+c = 0
+
 while True:
-
+  
   if button_a.was_pressed():
-    a += 1
-
-  elif a == 9:
+    c += 1
+  elif c == 9:
     music.play(music.POWER_DOWN)
-    a = 0
-  display.show(HANGMAN[a])
-
-
-
-
+    display.clear()
+    c = 0
+  display.show(HANGMAN[c])
+  sleep(1000)
+  
